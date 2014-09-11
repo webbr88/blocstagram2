@@ -1,19 +1,21 @@
 //
 //  BLCAppDelegate.m
-//  Blocstagram2
+//  Blocstagram
 //
-//  Created by Renaldo Webb on 9/11/14.
+//  Created by Renaldo Webb on 8/27/14.
 //  Copyright (c) 2014 Renaldo Webb. All rights reserved.
 //
 
 #import "BLCAppDelegate.h"
+#import "BLCImagesTableViewController.h"
 
 @implementation BLCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[BLCImagesTableViewController alloc]init]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -27,7 +29,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

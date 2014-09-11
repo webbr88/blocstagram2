@@ -19,6 +19,17 @@
 		00A01FC719C23F0000EF952D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A01FAF19C23F0000EF952D /* UIKit.framework */; };
 		00A01FCF19C23F0100EF952D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FCD19C23F0100EF952D /* InfoPlist.strings */; };
 		00A01FD119C23F0100EF952D /* Blocstagram2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FD019C23F0100EF952D /* Blocstagram2Tests.m */; };
+		00A01FE519C23FCE00EF952D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FDB19C23FCE00EF952D /* 1.jpg */; };
+		00A01FE619C23FCE00EF952D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FDC19C23FCE00EF952D /* 2.jpg */; };
+		00A01FE719C23FCE00EF952D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FDD19C23FCE00EF952D /* 3.jpg */; };
+		00A01FE819C23FCE00EF952D /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FDE19C23FCE00EF952D /* 4.jpg */; };
+		00A01FE919C23FCE00EF952D /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FDF19C23FCE00EF952D /* 5.jpg */; };
+		00A01FEA19C23FCE00EF952D /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE019C23FCE00EF952D /* 6.jpg */; };
+		00A01FEB19C23FCE00EF952D /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE119C23FCE00EF952D /* 7.jpg */; };
+		00A01FEC19C23FCE00EF952D /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE219C23FCE00EF952D /* 8.jpg */; };
+		00A01FED19C23FCE00EF952D /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE319C23FCE00EF952D /* 9.jpg */; };
+		00A01FEE19C23FCE00EF952D /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE419C23FCE00EF952D /* 10.jpg */; };
+		00A01FF119C2400A00EF952D /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +59,18 @@
 		00A01FCC19C23F0100EF952D /* Blocstagram2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Blocstagram2Tests-Info.plist"; sourceTree = "<group>"; };
 		00A01FCE19C23F0100EF952D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00A01FD019C23F0100EF952D /* Blocstagram2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blocstagram2Tests.m; sourceTree = "<group>"; };
+		00A01FDB19C23FCE00EF952D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		00A01FDC19C23FCE00EF952D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		00A01FDD19C23FCE00EF952D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		00A01FDE19C23FCE00EF952D /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		00A01FDF19C23FCE00EF952D /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		00A01FE019C23FCE00EF952D /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		00A01FE119C23FCE00EF952D /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		00A01FE219C23FCE00EF952D /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		00A01FE319C23FCE00EF952D /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		00A01FE419C23FCE00EF952D /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		00A01FEF19C2400A00EF952D /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
+		00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +130,11 @@
 		00A01FB119C23F0000EF952D /* Blocstagram2 */ = {
 			isa = PBXGroup;
 			children = (
+				00A01FEF19C2400A00EF952D /* BLCImagesTableViewController.h */,
+				00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */,
 				00A01FBA19C23F0000EF952D /* BLCAppDelegate.h */,
 				00A01FBB19C23F0000EF952D /* BLCAppDelegate.m */,
+				00A01FDA19C23FAF00EF952D /* Images */,
 				00A01FBD19C23F0000EF952D /* Images.xcassets */,
 				00A01FB219C23F0000EF952D /* Supporting Files */,
 			);
@@ -142,6 +168,23 @@
 				00A01FCD19C23F0100EF952D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00A01FDA19C23FAF00EF952D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				00A01FDB19C23FCE00EF952D /* 1.jpg */,
+				00A01FDC19C23FCE00EF952D /* 2.jpg */,
+				00A01FDD19C23FCE00EF952D /* 3.jpg */,
+				00A01FDE19C23FCE00EF952D /* 4.jpg */,
+				00A01FDF19C23FCE00EF952D /* 5.jpg */,
+				00A01FE019C23FCE00EF952D /* 6.jpg */,
+				00A01FE119C23FCE00EF952D /* 7.jpg */,
+				00A01FE219C23FCE00EF952D /* 8.jpg */,
+				00A01FE319C23FCE00EF952D /* 9.jpg */,
+				00A01FE419C23FCE00EF952D /* 10.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +263,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A01FED19C23FCE00EF952D /* 9.jpg in Resources */,
+				00A01FEC19C23FCE00EF952D /* 8.jpg in Resources */,
+				00A01FE819C23FCE00EF952D /* 4.jpg in Resources */,
+				00A01FE719C23FCE00EF952D /* 3.jpg in Resources */,
+				00A01FEA19C23FCE00EF952D /* 6.jpg in Resources */,
+				00A01FE519C23FCE00EF952D /* 1.jpg in Resources */,
 				00A01FB619C23F0000EF952D /* InfoPlist.strings in Resources */,
+				00A01FE919C23FCE00EF952D /* 5.jpg in Resources */,
+				00A01FEB19C23FCE00EF952D /* 7.jpg in Resources */,
+				00A01FE619C23FCE00EF952D /* 2.jpg in Resources */,
+				00A01FEE19C23FCE00EF952D /* 10.jpg in Resources */,
 				00A01FBE19C23F0000EF952D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +295,7 @@
 			files = (
 				00A01FBC19C23F0000EF952D /* BLCAppDelegate.m in Sources */,
 				00A01FB819C23F0000EF952D /* main.m in Sources */,
+				00A01FF119C2400A00EF952D /* BLCImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
