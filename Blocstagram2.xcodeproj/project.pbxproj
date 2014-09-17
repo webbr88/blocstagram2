@@ -30,6 +30,10 @@
 		00A01FED19C23FCE00EF952D /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE319C23FCE00EF952D /* 9.jpg */; };
 		00A01FEE19C23FCE00EF952D /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00A01FE419C23FCE00EF952D /* 10.jpg */; };
 		00A01FF119C2400A00EF952D /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */; };
+		00A01FF419C257FB00EF952D /* BLCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FF319C257FB00EF952D /* BLCUser.m */; };
+		00A01FF719C258B100EF952D /* BLCMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FF619C258B100EF952D /* BLCMedia.m */; };
+		00A01FFA19C25AC700EF952D /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FF919C25AC700EF952D /* BLCComment.m */; };
+		00A01FFD19C25BDA00EF952D /* BLCDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A01FFC19C25BDA00EF952D /* BLCDatasource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,14 @@
 		00A01FE419C23FCE00EF952D /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		00A01FEF19C2400A00EF952D /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
 		00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
+		00A01FF219C257FB00EF952D /* BLCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCUser.h; sourceTree = "<group>"; };
+		00A01FF319C257FB00EF952D /* BLCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUser.m; sourceTree = "<group>"; };
+		00A01FF519C258B100EF952D /* BLCMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMedia.h; sourceTree = "<group>"; };
+		00A01FF619C258B100EF952D /* BLCMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMedia.m; sourceTree = "<group>"; };
+		00A01FF819C25AC700EF952D /* BLCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCComment.h; sourceTree = "<group>"; };
+		00A01FF919C25AC700EF952D /* BLCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComment.m; sourceTree = "<group>"; };
+		00A01FFB19C25BDA00EF952D /* BLCDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCDatasource.h; sourceTree = "<group>"; };
+		00A01FFC19C25BDA00EF952D /* BLCDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDatasource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +144,14 @@
 			children = (
 				00A01FEF19C2400A00EF952D /* BLCImagesTableViewController.h */,
 				00A01FF019C2400A00EF952D /* BLCImagesTableViewController.m */,
+				00A01FF219C257FB00EF952D /* BLCUser.h */,
+				00A01FF319C257FB00EF952D /* BLCUser.m */,
+				00A01FF519C258B100EF952D /* BLCMedia.h */,
+				00A01FF619C258B100EF952D /* BLCMedia.m */,
+				00A01FF819C25AC700EF952D /* BLCComment.h */,
+				00A01FF919C25AC700EF952D /* BLCComment.m */,
+				00A01FFB19C25BDA00EF952D /* BLCDatasource.h */,
+				00A01FFC19C25BDA00EF952D /* BLCDatasource.m */,
 				00A01FBA19C23F0000EF952D /* BLCAppDelegate.h */,
 				00A01FBB19C23F0000EF952D /* BLCAppDelegate.m */,
 				00A01FDA19C23FAF00EF952D /* Images */,
@@ -293,9 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A01FF419C257FB00EF952D /* BLCUser.m in Sources */,
 				00A01FBC19C23F0000EF952D /* BLCAppDelegate.m in Sources */,
 				00A01FB819C23F0000EF952D /* main.m in Sources */,
 				00A01FF119C2400A00EF952D /* BLCImagesTableViewController.m in Sources */,
+				00A01FFD19C25BDA00EF952D /* BLCDatasource.m in Sources */,
+				00A01FF719C258B100EF952D /* BLCMedia.m in Sources */,
+				00A01FFA19C25AC700EF952D /* BLCComment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
