@@ -11,7 +11,10 @@
 #import "BLCMedia.h"
 #import "BLCComment.h"
 
-@interface BLCDatasource ()
+@interface BLCDatasource () {
+    
+    NSMutableArray *_mediaItems;
+}
 
 @property (nonatomic,strong) NSArray *mediaItems;
 

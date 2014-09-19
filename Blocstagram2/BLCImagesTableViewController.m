@@ -11,6 +11,7 @@
 #import "BLCMedia.h"
 #import "BLCUser.h"
 #import "BLCComment.h"
+ #import "BLCMediaTableViewCell.h"
 
 @interface BLCImagesTableViewController ()
 
@@ -32,7 +33,9 @@
     [super viewDidLoad];
     
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"imageCell"];
+    [self.tableView registerClass:[BLCMediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,26 +55,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    static NSInteger imageViewTag = 1234;
-    UIImageView *imageView = (UIImageView*)[cell.contentView viewWithTag:imageViewTag];
-    
-    if (!imageView) {
-        // This is a new cell, it doesn't have an image view yet
-        imageView = [[UIImageView alloc] init];
-        imageView.contentMode = UIViewContentModeScaleToFill;
-        
-        imageView.frame = cell.contentView.bounds;
-        imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        
-        imageView.tag = imageViewTag;
-        [cell.contentView addSubview:imageView];
-    }
-    
-    BLCMedia *item = [BLCDatasource sharedInstance].mediaItems[indexPath.row];
-    imageView.image = item.image;
+    BLCMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mediaCell" forIndexPath:indexPath];
+    cell.mediaItem = [BLCDatasource sharedInstance].mediaItems[indexPath.row];
     
     return cell;
 }
@@ -79,9 +65,8 @@
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     BLCMedia *item =[BLCDatasource sharedInstance].mediaItems[indexPath.row];
-    UIImage *image = item.image;
-    
-    return image.size.height / image.size.width * CGRectGetWidth(self.view.frame);
+
+    return [BLCMediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
 }
 
 
@@ -92,6 +77,13 @@
  return YES;
      
  }
+
+  - (void)setEditing:(BOOL)editing animated:(BOOL)animated{
+      [super setEditing:editing animated:animated];
+      [self.tableView setEditing:editing animated:animated];
+      [self.tableView reloadData];
+   
+  }
  
 
 
