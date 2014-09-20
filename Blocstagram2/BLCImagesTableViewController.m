@@ -11,7 +11,9 @@
 #import "BLCMedia.h"
 #import "BLCUser.h"
 #import "BLCComment.h"
- #import "BLCMediaTableViewCell.h"
+#import "BLCMediaTableViewCell.h"
+
+
 
 @interface BLCImagesTableViewController ()
 
@@ -78,27 +80,24 @@
      
  }
 
-  - (void)setEditing:(BOOL)editing animated:(BOOL)animated{
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated{
       [super setEditing:editing animated:animated];
       [self.tableView setEditing:editing animated:animated];
-      [self.tableView reloadData];
    
   }
- 
 
 
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- //[[BLCDatasource sharedInstance].mediaItems removeObjectAtIndex:indexPath.row];
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
-
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle QforRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [[BLCDatasource sharedInstance].mediaItems[indexPath.row] removeObjectAtIndex:indexPath.row];
+        [tableView setEditing:YES animated:YES];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }
+}
 
 
 -(NSArray*) item{
