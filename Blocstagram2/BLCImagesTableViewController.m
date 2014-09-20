@@ -57,14 +57,14 @@
 {
     
     BLCMediaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mediaCell" forIndexPath:indexPath];
-    cell.mediaItem = [BLCDatasource sharedInstance].mediaItems[indexPath.row];
+    cell.mediaItem = [self item][indexPath.row];
     
     return cell;
 }
 
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    BLCMedia *item =[BLCDatasource sharedInstance].mediaItems[indexPath.row];
+    BLCMedia *item =[self item][indexPath.row];
 
     return [BLCMediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
 }

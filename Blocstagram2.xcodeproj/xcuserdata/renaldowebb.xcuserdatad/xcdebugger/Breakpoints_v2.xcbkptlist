@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blocstagram2/BLCMediaTableViewCell.m"
-            timestampString = "432841779.169198"
+            timestampString = "432848427.509789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "-setEditing:animated:"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-setSelected:animated:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
