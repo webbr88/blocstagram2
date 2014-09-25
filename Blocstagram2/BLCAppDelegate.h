@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+ @class BLCMedia;
+
 @interface BLCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
